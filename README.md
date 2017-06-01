@@ -9,7 +9,7 @@ ngrok http 5000
 #### Run the server
 python3 app.py
 ### ChatBot URL
-https://telegram.me/YUCHENGCZHENG1996
+https://telegram.me/jeremy666bot
 
 ## Finite State Machine
 ![](https://i.imgur.com/C8LuuQz.png)
