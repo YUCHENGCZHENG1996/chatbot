@@ -1,61 +1,26 @@
-# TOC Project 2017
+# TOC Project2017
 
-Template Code for TOC Project 2017
-
-A telegram bot based on a finite state machine
-
-## Setup
 
 ### Prerequisite
 * Python 3
 
-#### Install Dependency
-```sh
-pip install -r requirements.txt
-```
-
-* pygraphviz (For visualizing Finite State Machine)
-    * [Setup pygraphviz on Ubuntu](http://www.jianshu.com/p/a3da7ecc5303)
-
-### Secret Data
-
-`API_TOKEN` and `WEBHOOK_URL` in app.py **MUST** be set to proper values.
-Otherwise, you might not be able to run your code.
-
-### Run Locally
-You can either setup https server or using `ngrok` as a proxy.
-
-**`ngrok` would be used in the following instruction**
-
-```sh
+### setup https server or using ngrok as a proxy.
 ngrok http 5000
-```
-
-After that, `ngrok` would generate a https URL.
-
-You should set `WEBHOOK_URL` (in app.py) to `your-https-URL/hook`.
-
-#### Run the sever
-
-```sh
+#### Run the server
 python3 app.py
-```
+### ChatBot URL
+https://telegram.me/YUCHENGCZHENG1996
 
 ## Finite State Machine
-![fsm](./img/show-fsm.png)
+![](https://i.imgur.com/C8LuuQz.png)
+
 
 ## Usage
-The initial state is set to `user`.
-
-Every time `user` state is triggered to `advance` to another state, it will `go_back` to `user` state after the bot replies corresponding message.
-
-* user
-	* Input: "go to state1"
-		* Reply: "I'm entering state1"
-
-	* Input: "go to state2"
-		* Reply: "I'm entering state2"
+這是個可以跟你聊天紓壓的機器人，有三個指令可以輸入
+1.如果你輸入我好難過，機器人會回問你怎麼了，然後如果你說我有心事他會回你說請說，然後接下來不論你跟他分享什麼他都會回好啦拍拍。
+2.如果你輸入我好孤單，他會回傳一張搞笑圖片。
+3.如果你輸入我好累，他會跟你說休息一下啊。
 
 
 ## Author
-[Lee-W](https://github.com/Lee-W)
+[鄭宇呈]
